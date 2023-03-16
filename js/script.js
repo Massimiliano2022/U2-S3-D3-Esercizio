@@ -22,7 +22,8 @@ fetch("https://striveschool-api.herokuapp.com/books")
                     <p class="card-text" id="book-price">Price: ${book.price}</p>
                     <button type="button" class="btn btn-primary" id="btnDelete">Delete</button>
                     <button class="btn btn-primary" id="btnAddShopping" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart" aria-controls="cart">
-                        Add to shopping-cart
+                        Add to shopping cart 
+                        <i class="bi bi-cart-fill"></i>
                     </button>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="cart" aria-labelledby="cartLabel">
                         <div class="offcanvas-header">
@@ -59,7 +60,10 @@ fetch("https://striveschool-api.herokuapp.com/books")
                         <div class="card-body">
                             <h5 class="card-title text-truncate">${cartItem.title}</h5>
                             <p class="card-text">${cartItem.price}</p>
-                            <button type="button" class="btn btn-primary" id="removeItemsFromCart">Remove from cart</button>
+                            <button type="button" class="btn btn-primary" id="removeItemsFromCart">
+                                Remove from cart
+                                <i class="bi bi-trash3-fill"></i>
+                            </button>
                         </div>
                     `;
 
